@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidJsonApi.iml" filepath="$PROJECT_DIR$/AndroidJsonApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi/jsonapi.iml" filepath="$PROJECT_DIR$/jsonapi/jsonapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi-annotations/annotations.iml" filepath="$PROJECT_DIR$/jsonapi-annotations/annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi-compiler/compiler.iml" filepath="$PROJECT_DIR$/jsonapi-compiler/compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi-converters/jsonapi-converters.iml" filepath="$PROJECT_DIR$/jsonapi-converters/jsonapi-converters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi-sample/app.iml" filepath="$PROJECT_DIR$/jsonapi-sample/app.iml" />
+    </modules>
+  </component>
+</project>
