@@ -1,4 +1,4 @@
-package br.com.bankfacil.androidjsonapi;
+package jsonapi.gson;
 
 import com.google.gson.Gson;
 import com.squareup.okhttp.ResponseBody;
@@ -6,24 +6,19 @@ import com.squareup.okhttp.ResponseBody;
 import java.io.IOException;
 import java.io.Reader;
 import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
-import jsonapi.GsonConverter;
+import br.com.bankfacil.jsonapi.AndroidJsonApi;
 import retrofit.Converter;
 
 /**
  * Created by broto on 2/17/16.
  */
-public class JsonApiResponseBodyConverter<T> implements Converter<ResponseBody, T> {
-
-
+public class GsonJsonApiResponseBodyConverter<T> implements Converter<ResponseBody, T> {
 
     private final Gson gson;
     private final Type type;
 
-    JsonApiResponseBodyConverter(Gson gson, Type type) {
+    public GsonJsonApiResponseBodyConverter(Gson gson, Type type) {
         this.gson = gson;
         this.type = type;
     }
@@ -34,8 +29,7 @@ public class JsonApiResponseBodyConverter<T> implements Converter<ResponseBody, 
         try {
             String json = fromReader(reader);
             try {
-                T t = (T) gson.fromJson(fromJsonApi(json), type);
-                return t;
+                return (T) gson.fromJson(fromJsonApi(json), type);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -69,23 +63,9 @@ public class JsonApiResponseBodyConverter<T> implements Converter<ResponseBody, 
         return out.toString();
     }
 
-    private static String fromJsonApi(String json) throws Exception {
-        Gson gson = new Gson();
-
+    private String fromJsonApi(String json) throws Exception {
         GsonConverter gsonConverter = new GsonConverter(gson);
-//        JsonApiResponse response = gson.fromJson(json, JsonApiResponse.class);
-        List<Map<String, Object>> data = new ArrayList<>();
 
-
-
-        String formatted;
-
-        if (data.size() == 1) {
-            formatted = gson.toJson(data.get(0));
-        } else {
-            formatted = gson.toJson(data);
-        }
-
-        return formatted;
+        return AndroidJsonApi.convert(gsonConverter, json);
     }
 }

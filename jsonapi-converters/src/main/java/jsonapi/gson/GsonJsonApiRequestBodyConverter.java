@@ -1,4 +1,4 @@
-package br.com.bankfacil.androidjsonapi;
+package jsonapi.gson;
 
 import com.google.gson.Gson;
 import com.squareup.okhttp.MediaType;
@@ -16,14 +16,14 @@ import retrofit.Converter;
 /**
  * Created by broto on 2/17/16.
  */
-public class JsonApiRequestBodyConverter<T> implements Converter<T, RequestBody> {
+public class GsonJsonApiRequestBodyConverter<T> implements Converter<T, RequestBody> {
     private static final MediaType MEDIA_TYPE = MediaType.parse("application/json; charset=UTF-8");
     private static final Charset UTF_8 = Charset.forName("UTF-8");
 
     private final Gson gson;
     private final Type type;
 
-    JsonApiRequestBodyConverter(Gson gson, Type type) {
+    GsonJsonApiRequestBodyConverter(Gson gson, Type type) {
         this.gson = gson;
         this.type = type;
     }

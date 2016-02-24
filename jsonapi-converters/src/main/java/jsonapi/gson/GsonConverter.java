@@ -1,6 +1,9 @@
-package jsonapi;
+package jsonapi.gson;
 
 import com.google.gson.Gson;
+
+import br.com.bankfacil.jsonapi.JsonConverter;
+
 
 /**
  * Created by broto on 23/02/16.

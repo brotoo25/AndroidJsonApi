@@ -1,4 +1,4 @@
-package br.com.bankfacil.androidjsonapi;
+package jsonapi.gson;
 
 import com.google.gson.Gson;
 import com.squareup.okhttp.RequestBody;
@@ -12,30 +12,30 @@ import retrofit.Converter;
 /**
  * Created by broto on 2/16/16.
  */
-public class JsonApiConverterFactory extends Converter.Factory {
+public class GsonJsonApiConverterFactory extends Converter.Factory {
 
-    public static JsonApiConverterFactory create() {
+    public static GsonJsonApiConverterFactory create() {
         return create(new Gson());
     }
 
-    public static JsonApiConverterFactory create(Gson gson) {
-        return new JsonApiConverterFactory(gson);
+    public static GsonJsonApiConverterFactory create(Gson gson) {
+        return new GsonJsonApiConverterFactory(gson);
     }
 
     private final Gson gson;
 
-    private JsonApiConverterFactory(Gson gson) {
+    private GsonJsonApiConverterFactory(Gson gson) {
         if (gson == null) throw new NullPointerException("gson == null");
         this.gson = gson;
     }
 
     @Override
     public Converter<ResponseBody, ?> fromResponseBody(Type type, Annotation[] annotations) {
-        return new JsonApiResponseBodyConverter<>(gson, type);
+        return new GsonJsonApiResponseBodyConverter<>(gson, type);
     }
 
     @Override
     public Converter<?, RequestBody> toRequestBody(Type type, Annotation[] annotations) {
-        return new JsonApiRequestBodyConverter<>(gson, type);
+        return new GsonJsonApiRequestBodyConverter<>(gson, type);
     }
 }

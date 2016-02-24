@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import jsonapi.JsonConverter;
 import rx.Observable;
 
 /**
@@ -13,7 +12,6 @@ import rx.Observable;
  */
 public final class AndroidJsonApi {
 
-    private static final String TAG = "AndroidJsonApi";
     private static String RELATIONSHIP_KEY = "relationships";
     private static String ATTRIBUTES_KEY = "attributes";
 

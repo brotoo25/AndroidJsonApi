@@ -6,6 +6,10 @@ import android.util.Log;
 
 import com.squareup.okhttp.OkHttpClient;
 
+import br.com.bankfacil.androidjsonapi.model.Article;
+import br.com.bankfacil.androidjsonapi.network.ApiService;
+import br.com.bankfacil.androidjsonapi.network.FakeClient;
+import jsonapi.gson.GsonJsonApiConverterFactory;
 import retrofit.Call;
 import retrofit.Callback;
 import retrofit.Response;
@@ -22,23 +26,23 @@ public class MainActivity extends Activity {
         client.interceptors().add(new FakeClient());
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://api.nuuneoi.com/base/")
-                .addConverterFactory(JsonApiConverterFactory.create())
+                .baseUrl("http://api.test.com/article/")
+                .addConverterFactory(GsonJsonApiConverterFactory.create())
                 .client(client)
                 .build();
 
         ApiService api = retrofit.create(ApiService.class);
-        Call<ApplicationModel> call = api.getApplication();
+        Call<Article> call = api.getArticle();
 
-        call.enqueue(new Callback<ApplicationModel>() {
+        call.enqueue(new Callback<Article>() {
             @Override
-            public void onResponse(Response<ApplicationModel> response, Retrofit retrofit) {
-                Log.e("MAIN_ACITIVITY", "Completed");
+            public void onResponse(Response<Article> response, Retrofit retrofit) {
+                Log.e("MainActivity", response.body().toString());
             }
 
             @Override
             public void onFailure(Throwable t) {
-                Log.e("MAIN_ACITIVITY", t.getMessage());
+                Log.e("MainActivity", t.getMessage());
             }
         });
     }

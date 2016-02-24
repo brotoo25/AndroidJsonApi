@@ -20,11 +20,10 @@ android {
 }
 
 dependencies {
+    testCompile 'junit:junit:4.12'
+
+    compile project(':jsonapi')
     compile project(':jsonapi-converters')
 
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.1'
-
-    compile 'com.google.code.gson:gson:2.6.1'
     compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
 }
