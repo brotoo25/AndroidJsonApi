@@ -1,4 +1,4 @@
-package jsonapi.gson;
+package jsonapi;
 
 import com.google.gson.Gson;
 import com.squareup.okhttp.ResponseBody;

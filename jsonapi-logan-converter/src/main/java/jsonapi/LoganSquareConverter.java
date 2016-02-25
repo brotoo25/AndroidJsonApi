@@ -1,10 +1,12 @@
-package jsonapi.logansquare;
+package jsonapi;
 
 
 import br.com.bankfacil.jsonapi.JsonConverter;
 
 /**
  * Created by broto on 24/02/16.
+ *
+ * // TODO: Implement it
  */
 public class LoganSquareConverter implements JsonConverter {
 

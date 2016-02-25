@@ -1,6 +1,6 @@
 package br.com.bankfacil.androidjsonapi.network;
 
-import br.com.bankfacil.androidjsonapi.model.Article;
+import br.com.bankfacil.androidjsonapi.model.JsonApi_Article;
 import retrofit.Call;
 import retrofit.http.GET;
 
@@ -10,6 +10,6 @@ import retrofit.http.GET;
 public interface ApiService {
 
     @GET("/2.2/whatever/api")
-    Call<Article> getArticle();
+    Call<JsonApi_Article> getArticle();
 
 }

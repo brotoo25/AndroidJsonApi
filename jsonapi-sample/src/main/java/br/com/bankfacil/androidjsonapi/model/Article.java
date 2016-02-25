@@ -43,4 +43,5 @@ public class Article {
     public void setComments(List<Comment> comments) {
         this.comments = comments;
     }
+
 }

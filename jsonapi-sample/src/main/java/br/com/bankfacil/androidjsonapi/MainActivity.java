@@ -6,10 +6,10 @@ import android.util.Log;
 
 import com.squareup.okhttp.OkHttpClient;
 
-import br.com.bankfacil.androidjsonapi.model.Article;
+import br.com.bankfacil.androidjsonapi.model.JsonApi_Article;
 import br.com.bankfacil.androidjsonapi.network.ApiService;
 import br.com.bankfacil.androidjsonapi.network.FakeClient;
-import jsonapi.gson.GsonJsonApiConverterFactory;
+import jsonapi.GsonJsonApiConverterFactory;
 import retrofit.Call;
 import retrofit.Callback;
 import retrofit.Response;
@@ -32,11 +32,11 @@ public class MainActivity extends Activity {
                 .build();
 
         ApiService api = retrofit.create(ApiService.class);
-        Call<Article> call = api.getArticle();
+        Call<JsonApi_Article> call = api.getArticle();
 
-        call.enqueue(new Callback<Article>() {
+        call.enqueue(new Callback<JsonApi_Article>() {
             @Override
-            public void onResponse(Response<Article> response, Retrofit retrofit) {
+            public void onResponse(Response<JsonApi_Article> response, Retrofit retrofit) {
                 Log.e("MainActivity", response.body().toString());
             }
 

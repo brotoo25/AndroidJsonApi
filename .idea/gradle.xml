@@ -12,7 +12,8 @@
             <option value="$PROJECT_DIR$/jsonapi" />
             <option value="$PROJECT_DIR$/jsonapi-annotations" />
             <option value="$PROJECT_DIR$/jsonapi-compiler" />
-            <option value="$PROJECT_DIR$/jsonapi-converters" />
+            <option value="$PROJECT_DIR$/jsonapi-gson-converter" />
+            <option value="$PROJECT_DIR$/jsonapi-logan-converter" />
             <option value="$PROJECT_DIR$/jsonapi-sample" />
           </set>
         </option>
@@ -22,7 +23,8 @@
             <option value="$PROJECT_DIR$/jsonapi" />
             <option value="$PROJECT_DIR$/jsonapi-annotations" />
             <option value="$PROJECT_DIR$/jsonapi-compiler" />
-            <option value="$PROJECT_DIR$/jsonapi-converters" />
+            <option value="$PROJECT_DIR$/jsonapi-gson-converter" />
+            <option value="$PROJECT_DIR$/jsonapi-logan-converter" />
             <option value="$PROJECT_DIR$/jsonapi-sample" />
           </set>
         </option>

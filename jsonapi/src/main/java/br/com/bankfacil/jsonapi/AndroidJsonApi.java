@@ -20,7 +20,7 @@ public final class AndroidJsonApi {
     }
 
     public static String convert(JsonConverter converter, String rawJson) {
-        JsonApiResponse response = (JsonApiResponse) converter.fromJson(rawJson, JsonApiResponse.class);
+        br.com.bankfacil.jsonapi.model.JsonApiResponse response = (br.com.bankfacil.jsonapi.model.JsonApiResponse) converter.fromJson(rawJson, br.com.bankfacil.jsonapi.model.JsonApiResponse.class);
         List<Map<String, Object>> data = new ArrayList<>();
 
         response.data()
