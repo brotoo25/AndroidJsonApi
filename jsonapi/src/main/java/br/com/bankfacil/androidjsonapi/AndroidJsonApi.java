@@ -1,10 +1,11 @@
-package br.com.bankfacil.jsonapi;
+package br.com.bankfacil.androidjsonapi;
 
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import br.com.bankfacil.androidjsonapi.model.JsonApiResponse;
 import rx.Observable;
 
 /**
@@ -20,7 +21,7 @@ public final class AndroidJsonApi {
     }
 
     public static String convert(JsonConverter converter, String rawJson) {
-        br.com.bankfacil.jsonapi.model.JsonApiResponse response = (br.com.bankfacil.jsonapi.model.JsonApiResponse) converter.fromJson(rawJson, br.com.bankfacil.jsonapi.model.JsonApiResponse.class);
+        JsonApiResponse response = (JsonApiResponse) converter.fromJson(rawJson, JsonApiResponse.class);
         List<Map<String, Object>> data = new ArrayList<>();
 
         response.data()

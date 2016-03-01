@@ -1,7 +1,7 @@
-package jsonapi;
+package br.com.bankfacil.androidjsonapi.converter;
 
 
-import br.com.bankfacil.jsonapi.JsonConverter;
+import br.com.bankfacil.androidjsonapi.JsonConverter;
 
 /**
  * Created by broto on 24/02/16.

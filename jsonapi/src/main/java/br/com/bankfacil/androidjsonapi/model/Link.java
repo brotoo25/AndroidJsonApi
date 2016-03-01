@@ -1,4 +1,4 @@
-package br.com.bankfacil.jsonapi.model;
+package br.com.bankfacil.androidjsonapi.model;
 
 /**
  * Created by broto on 25/02/16.

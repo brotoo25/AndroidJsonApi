@@ -1,4 +1,4 @@
-package jsonapi;
+package br.com.bankfacil.androidjsonapi.converter;
 
 import com.google.gson.Gson;
 import com.squareup.okhttp.RequestBody;

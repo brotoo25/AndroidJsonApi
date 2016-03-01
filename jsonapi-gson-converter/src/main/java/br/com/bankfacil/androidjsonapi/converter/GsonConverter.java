@@ -1,8 +1,8 @@
-package jsonapi;
+package br.com.bankfacil.androidjsonapi.converter;
 
 import com.google.gson.Gson;
 
-import br.com.bankfacil.jsonapi.JsonConverter;
+import br.com.bankfacil.androidjsonapi.JsonConverter;
 
 
 /**

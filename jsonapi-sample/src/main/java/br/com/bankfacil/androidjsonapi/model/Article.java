@@ -2,8 +2,8 @@ package br.com.bankfacil.androidjsonapi.model;
 
 import java.util.List;
 
-import jsonapi.JsonApiRelationship;
-import jsonapi.JsonApiResource;
+import br.com.bankfacil.androidjsonapi.JsonApiRelationship;
+import br.com.bankfacil.androidjsonapi.JsonApiResource;
 
 /**
  * Created by broto on 22/02/16.

@@ -1,4 +1,4 @@
-package jsonapi;
+package br.com.bankfacil.androidjsonapi.converter;
 
 import com.google.gson.Gson;
 import com.squareup.okhttp.ResponseBody;
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.lang.reflect.Type;
 
-import br.com.bankfacil.jsonapi.AndroidJsonApi;
+import br.com.bankfacil.androidjsonapi.AndroidJsonApi;
 import retrofit.Converter;
 
 /**

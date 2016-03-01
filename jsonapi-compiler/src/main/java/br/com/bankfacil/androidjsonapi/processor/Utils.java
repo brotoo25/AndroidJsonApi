@@ -1,4 +1,4 @@
-package jsonapi;
+package br.com.bankfacil.androidjsonapi.processor;
 
 import javax.lang.model.element.PackageElement;
 import javax.lang.model.element.TypeElement;

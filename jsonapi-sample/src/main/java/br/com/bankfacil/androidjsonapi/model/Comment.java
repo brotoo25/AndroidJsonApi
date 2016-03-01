@@ -1,7 +1,7 @@
 package br.com.bankfacil.androidjsonapi.model;
 
 
-import jsonapi.JsonApiResource;
+import br.com.bankfacil.androidjsonapi.JsonApiResource;
 
 /**
  * Created by broto on 22/02/16.

@@ -1,4 +1,4 @@
-package jsonapi;
+package br.com.bankfacil.androidjsonapi;
 
 /**
  * Created by broto on 25/02/16.

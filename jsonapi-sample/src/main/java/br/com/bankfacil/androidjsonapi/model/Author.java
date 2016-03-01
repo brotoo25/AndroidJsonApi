@@ -2,7 +2,7 @@ package br.com.bankfacil.androidjsonapi.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import jsonapi.JsonApiResource;
+import br.com.bankfacil.androidjsonapi.JsonApiResource;
 
 
 /**

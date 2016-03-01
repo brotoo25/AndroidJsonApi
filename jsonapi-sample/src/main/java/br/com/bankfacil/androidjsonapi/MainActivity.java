@@ -9,7 +9,7 @@ import com.squareup.okhttp.OkHttpClient;
 import br.com.bankfacil.androidjsonapi.model.JsonApi_Article;
 import br.com.bankfacil.androidjsonapi.network.ApiService;
 import br.com.bankfacil.androidjsonapi.network.FakeClient;
-import jsonapi.GsonJsonApiConverterFactory;
+import br.com.bankfacil.androidjsonapi.converter.GsonJsonApiConverterFactory;
 import retrofit.Call;
 import retrofit.Callback;
 import retrofit.Response;

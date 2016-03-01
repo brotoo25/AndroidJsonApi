@@ -1,4 +1,4 @@
-package br.com.bankfacil.jsonapi;
+package br.com.bankfacil.androidjsonapi;
 
 import org.junit.Test;
 

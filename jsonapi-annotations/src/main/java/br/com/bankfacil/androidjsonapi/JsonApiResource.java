@@ -1,4 +1,4 @@
-package jsonapi;
+package br.com.bankfacil.androidjsonapi;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

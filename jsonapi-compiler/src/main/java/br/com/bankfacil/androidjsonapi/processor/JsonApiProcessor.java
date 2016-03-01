@@ -1,4 +1,4 @@
-package jsonapi;
+package br.com.bankfacil.androidjsonapi.processor;
 
 import com.google.auto.service.AutoService;
 import com.squareup.javapoet.JavaFile;
@@ -19,6 +19,9 @@ import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 import javax.lang.model.element.VariableElement;
 
+import br.com.bankfacil.androidjsonapi.JsonApiRelationship;
+import br.com.bankfacil.androidjsonapi.JsonApiResource;
+
 import static com.squareup.javapoet.JavaFile.builder;
 import static com.squareup.javapoet.MethodSpec.methodBuilder;
 import static com.squareup.javapoet.TypeName.get;
@@ -26,7 +29,7 @@ import static com.squareup.javapoet.TypeSpec.classBuilder;
 import static javax.lang.model.SourceVersion.latestSupported;
 import static javax.lang.model.element.Modifier.PUBLIC;
 import static javax.tools.Diagnostic.Kind.ERROR;
-import static jsonapi.Utils.getPackageName;
+import static br.com.bankfacil.androidjsonapi.processor.Utils.getPackageName;
 
 /**
  * Created by broto on 22/02/16.
@@ -49,7 +52,7 @@ public class JsonApiProcessor extends AbstractProcessor {
     @Override
     public Set<String> getSupportedAnnotationTypes() {
         Set<String> types = new LinkedHashSet<>();
-        types.add(JsonApiResource.class.getCanonicalName());
+        types.add(br.com.bankfacil.androidjsonapi.JsonApiResource.class.getCanonicalName());
         types.add(JsonApiRelationship.class.getCanonicalName());
 
         return types;
@@ -105,9 +108,9 @@ public class JsonApiProcessor extends AbstractProcessor {
         builder.addMethod(makeSetMethod("type"));
         builder.addMethod(makeGetMethod("type", String.class));
 
-        builder.addField(Link.class, "links");
+        builder.addField(br.com.bankfacil.androidjsonapi.Link.class, "links");
         builder.addMethod(makeSetMethod("links"));
-        builder.addMethod(makeGetMethod("links", Link.class));
+        builder.addMethod(makeGetMethod("links", br.com.bankfacil.androidjsonapi.Link.class));
 
         return builder.build();
     }

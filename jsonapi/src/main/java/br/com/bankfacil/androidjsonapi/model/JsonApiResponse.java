@@ -1,4 +1,4 @@
-package br.com.bankfacil.jsonapi.model;
+package br.com.bankfacil.androidjsonapi.model;
 
 import java.util.List;
 import java.util.Map;
