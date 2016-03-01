@@ -41,8 +41,8 @@ Like all libraries that generate dynamic code, Proguard might think some classes
 
 ```
   -keep class br.com.bankfacil.androidjsonapi.** { *; }
-  -keep @jsonapi.JsonApiResource class *
-  -keep @jsonapi.JsonApiRelationship class *
+  -keep @br.com.bankfacil.androidjsonapi.JsonApiResource class *
+  -keep @br.com.bankfacil.androidjsonapi.JsonApiRelationship class *
   -keep class JsonApi_** { *; }
 ```
 
