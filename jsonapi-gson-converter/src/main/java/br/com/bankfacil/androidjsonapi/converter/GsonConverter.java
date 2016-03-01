@@ -17,12 +17,12 @@ public class GsonConverter implements JsonConverter {
     }
 
     @Override
-    public String toJson(Object object) {
+    public <T> String toJson(T object) {
         return gson.toJson(object);
     }
 
     @Override
-    public Object fromJson(String json, Class clazz) {
+    public <T> T fromJson(String json, Class<T> clazz) {
         return gson.fromJson(json, clazz);
     }
 }

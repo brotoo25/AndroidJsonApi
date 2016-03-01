@@ -5,7 +5,7 @@ package br.com.bankfacil.androidjsonapi;
  */
 public interface JsonConverter {
 
-    String toJson(Object object);
+    <T> String toJson(T object);
 
-    Object fromJson(String json, Class clazz);
+    <T> T fromJson(String json, Class<T> clazz);
 }
