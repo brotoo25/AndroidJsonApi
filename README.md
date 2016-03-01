@@ -10,6 +10,7 @@ Gradle:
 
 ```groovy
 compile 'br.com.bankfacil:androidjsonapi:0.0.1'
+apt 'br.com.bankfacil:androidjsonapi-compiler:0.0.1'
 ```
 
 AndroidJsonApi requires at minimum Java 7. If compiling from source code Java 8 will be necessary because we make use of the Retrolambda tool. 
