@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/jsonapi-annotations/jsonapi-annotations.iml" filepath="$PROJECT_DIR$/jsonapi-annotations/jsonapi-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-compiler/jsonapi-compiler.iml" filepath="$PROJECT_DIR$/jsonapi-compiler/jsonapi-compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-gson-converter/jsonapi-converters.iml" filepath="$PROJECT_DIR$/jsonapi-gson-converter/jsonapi-converters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi-gson-converter/jsonapi-gson-converter.iml" filepath="$PROJECT_DIR$/jsonapi-gson-converter/jsonapi-gson-converter.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-logan-converter/jsonapi-logan-converter.iml" filepath="$PROJECT_DIR$/jsonapi-logan-converter/jsonapi-logan-converter.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-sample/jsonapi-sample.iml" filepath="$PROJECT_DIR$/jsonapi-sample/jsonapi-sample.iml" />
     </modules>
