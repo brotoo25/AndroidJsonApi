@@ -11,6 +11,8 @@ machine:
         version: oraclejdk8
     environment:
         ANDROID_HOME: /usr/local/android-sdk-linux
+        JAVA7_HOME: "/usr/lib/jvm/java-7-openjdk-amd64"
+        JAVA8_HOME: "/usr/lib/jvm/jdk1.8.0"
 
 dependencies:
     pre:
