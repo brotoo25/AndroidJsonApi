@@ -1,7 +1,7 @@
 package br.com.bankfacil.androidjsonapi;
 
-import com.google.gson.Gson;
 
+import com.google.gson.Gson;
 
 /**
  * Created by broto on 23/02/16.
@@ -15,12 +15,12 @@ public class GsonConverter implements JsonConverter {
     }
 
     @Override
-    public String toJson(Object object) {
+    public <T> String toJson(T object) {
         return gson.toJson(object);
     }
 
     @Override
-    public Object fromJson(String json, Class clazz) {
+    public <T> T fromJson(String json, Class<T> clazz) {
         return gson.fromJson(json, clazz);
     }
 }
