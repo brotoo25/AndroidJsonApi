@@ -3,15 +3,22 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidJsonApi.iml" filepath="$PROJECT_DIR$/AndroidJsonApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidJsonApi.iml" filepath="$PROJECT_DIR$/AndroidJsonApi.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-annotations/annotations.iml" filepath="$PROJECT_DIR$/jsonapi-annotations/annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-sample/app.iml" filepath="$PROJECT_DIR$/jsonapi-sample/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-compiler/compiler.iml" filepath="$PROJECT_DIR$/jsonapi-compiler/compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi/jsonapi.iml" filepath="$PROJECT_DIR$/jsonapi/jsonapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi/jsonapi.iml" filepath="$PROJECT_DIR$/jsonapi/jsonapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-annotations/jsonapi-annotations.iml" filepath="$PROJECT_DIR$/jsonapi-annotations/jsonapi-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi-annotations/jsonapi-annotations.iml" filepath="$PROJECT_DIR$/jsonapi-annotations/jsonapi-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi-compiler/jsonapi-compiler.iml" filepath="$PROJECT_DIR$/jsonapi-compiler/jsonapi-compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-compiler/jsonapi-compiler.iml" filepath="$PROJECT_DIR$/jsonapi-compiler/jsonapi-compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-gson-converter/jsonapi-converters.iml" filepath="$PROJECT_DIR$/jsonapi-gson-converter/jsonapi-converters.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-gson-converter/jsonapi-gson-converter.iml" filepath="$PROJECT_DIR$/jsonapi-gson-converter/jsonapi-gson-converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi-gson-converter/jsonapi-gson-converter.iml" filepath="$PROJECT_DIR$/jsonapi-gson-converter/jsonapi-gson-converter.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-logan-converter/jsonapi-logan-converter.iml" filepath="$PROJECT_DIR$/jsonapi-logan-converter/jsonapi-logan-converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi-logan-converter/jsonapi-logan-converter.iml" filepath="$PROJECT_DIR$/jsonapi-logan-converter/jsonapi-logan-converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsonapi-sample/jsonapi-sample.iml" filepath="$PROJECT_DIR$/jsonapi-sample/jsonapi-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsonapi-sample/jsonapi-sample.iml" filepath="$PROJECT_DIR$/jsonapi-sample/jsonapi-sample.iml" />
     </modules>
   </component>
