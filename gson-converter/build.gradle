@@ -1,0 +1,38 @@
+apply plugin: 'java'
+
+targetCompatibility = '1.7'
+sourceCompatibility = '1.7'
+
+dependencies {
+    compile project(':jsonapi')
+
+    compile 'com.google.code.gson:gson:2.6.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'androidjsonapi-gson-converter'
+
+    publishedGroupId = 'br.com.bankfacil.jsonapi'
+    libraryName = 'gson-converter'
+    artifact = 'gson-converter'
+
+    libraryDescription = 'Android JsonApi Retrofit converter'
+
+    siteUrl = 'https://bintray.com/bankfacil/maven/androidjsonapi-gson-converter'
+    gitUrl = 'https://github.com/BankFacil/AndroidJsonApi'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'brotoo25'
+    developerName = 'Abraao Lima'
+    developerEmail = 'abraao@bankfacil.com.br'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["MIT"]
+}
+
+apply from: rootProject.file('gradle/install.gradle')
+apply from: rootProject.file('gradle/bintray.gradle')

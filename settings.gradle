@@ -1,1 +1,1 @@
-include ':jsonapi-sample', ':jsonapi-annotations', ':jsonapi-compiler', ':jsonapi', ':jsonapi', ':jsonapi-gson-converter', ':jsonapi-logan-converter'
+include ':sample', ':annotations', ':compiler', ':jsonapi', ':jsonapi', ':gson-converter', ':logan-converter'
