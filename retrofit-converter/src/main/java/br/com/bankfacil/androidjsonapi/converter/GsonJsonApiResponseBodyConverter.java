@@ -17,10 +17,12 @@ public class GsonJsonApiResponseBodyConverter<T> implements Converter<ResponseBo
 
     private final Gson gson;
     private final Type type;
+    private AndroidJsonApi androidJsonApi;
 
-    public GsonJsonApiResponseBodyConverter(Gson gson, Type type) {
+    public GsonJsonApiResponseBodyConverter(AndroidJsonApi androidJsonApi, Gson gson, Type type) {
         this.gson = gson;
         this.type = type;
+        this.androidJsonApi = androidJsonApi;
     }
 
     @Override
@@ -66,6 +68,6 @@ public class GsonJsonApiResponseBodyConverter<T> implements Converter<ResponseBo
     private String fromJsonApi(String json) throws Exception {
         GsonConverter gsonConverter = new GsonConverter(gson);
 
-        return AndroidJsonApi.convert(gsonConverter, json);
+        return androidJsonApi.convertToSimpleJson(json);
     }
 }

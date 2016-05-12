@@ -27,7 +27,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     compile project(':jsonapi')
-    compile project(':gson-converter')
+    compile project(':retrofit-converter')
     apt project(':compiler')
 
     compile 'com.squareup.retrofit2:retrofit:2.0.0'

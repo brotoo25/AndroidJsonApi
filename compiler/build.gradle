@@ -22,7 +22,7 @@ ext {
     siteUrl = 'https://bintray.com/bankfacil/maven/androidjsonapi-compiler'
     gitUrl = 'https://github.com/BankFacil/AndroidJsonApi'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.2'
 
     developerId = 'brotoo25'
     developerName = 'Abraao Lima'
